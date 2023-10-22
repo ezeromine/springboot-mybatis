@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/layout}">
+<head>
+    <title>index Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body layout:fragment="content">
+<main role="main">
+    <div class="container">
+        <section class="text-center">
+            <!-- Background image -->
+            <div class="p-5 bg-image" style="
+        background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+        height: 300px;
+        "></div>
+            <!-- Background image -->
+
+            <div class="card mx-4 mx-md-5 shadow-5-strong" style="
+        margin-top: -100px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+                <div class="card-body py-5 px-md-5">
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="fw-bold mb-5">회원가입</h2>
+                            <form>
+                                <div class="form-outline mb-4">
+                                    <div class="form-outline">
+                                        <input type="text" id="inputId" class="form-control"/>
+                                        <label class="form-label" for="inputId">아이디</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="inputPassword" class="form-control"/>
+                                    <label class="form-label" for="inputPassword">비밀번호</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="inputPasswordCheck" class="form-control"/>
+                                    <label class="form-label" for="inputPasswordCheck">비밀번호 확인</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="inputNickname" class="form-control"/>
+                                    <label class="form-label" for="inputNickname">닉네임</label>
+                                </div>
+
+                                <!-- Email input -->
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form3Example3" class="form-control"/>
+                                    <label class="form-label" for="form3Example3">이메일</label>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-primary btn-block mb-4">
+                                    회원가입
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+</html>
